@@ -1,0 +1,12 @@
+.countdown {
+    font-size: 10rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--primary-color-card);
+}

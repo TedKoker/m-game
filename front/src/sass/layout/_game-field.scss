@@ -1,0 +1,8 @@
+.game-field {
+    grid-column: start-board 1 / end-board 6; 
+    position: relative;
+
+    @media only screen and (max-width: $bp-large-tablet) {
+        grid-column: 1 / -1; 
+    }
+}

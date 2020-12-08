@@ -1,0 +1,33 @@
+.open-field {
+    /*
+        remember that this is a fieldset and not an input/other element
+    */
+    position: relative;
+
+    input {
+        border: none;
+        border-bottom: 1px solid currentColor;
+        position: relative;
+        z-index: 1000;
+
+        &:focus,
+        &:not(:placeholder-shown) {
+            border: 2px solid currentColor;
+            outline: none;
+            border-radius: 3px;
+
+            + label {
+                transform: translateY(100%);
+            }
+        }
+    }
+
+    label {
+        position: absolute;
+        top:0;
+        left: 0;
+        z-index: 500;
+        display: inline-block;
+        transition: all .2s;
+    }
+}

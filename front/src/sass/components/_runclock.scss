@@ -1,0 +1,18 @@
+.runclock {
+    font-size: 5rem;
+    color: var(--primary-color-card);
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translateX(calc(100% + 4rem));
+    margin-top: 2rem;
+
+    @media only screen and (max-width: $bp-small-desktop) {
+        transform: translateX(calc(100% + 1rem));
+    }
+
+    @media only screen and (max-width: $bp-large-tablet) {
+        top: 100%;
+        right: 100%;
+    }
+}

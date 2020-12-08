@@ -1,0 +1,48 @@
+$bp-medium-desktop: 1540px;
+$bp-small-desktop: 1200px;
+$bp-large-tablet: 950px;
+$bp-tablet: 800px;
+$bp-small-tablet: 700px;
+$bp-big-phone: 600px;
+$bp-phone: 500px;
+$bp-small-phone: 440px;
+
+@mixin marginItemsSides($left, $right, $distance) {
+    &:nth-of-type(#{$left}) {
+        margin-left: $distance;
+        // transform: scale(.5);
+    }
+
+    &:nth-of-type(#{$right}) {
+        margin-right: $distance;
+        // transform: scale(.5);
+    }
+}
+
+
+:root {
+    --primary-color: #66b3ff;
+    --primary-color-light: #e6f2ff;
+    
+    --primary-text-color:#3d3d5c;
+
+    --primary-color-card: black;
+    --primary-color-light-card: black;
+
+    --heading-medium: 6rem;
+    --heading-large: 10rem; --heading-large: 10rem;
+
+    --font-size-big: 5rem;
+    --font-size-big-medium: 3rem;
+    --font-medium: 2.5rem;
+    --font-medium-small: 2rem;
+
+}
+
+html {
+    font-size: 62.5%;
+
+    @media only screen and (max-width: $bp-medium-desktop) {
+        font-size: 50%;
+    }
+}

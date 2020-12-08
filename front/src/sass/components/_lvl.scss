@@ -1,0 +1,123 @@
+.lvl {
+    --side-margin: 8rem;
+    margin-top: 3.5rem;
+    
+    &--easy {
+        @extend .lvl;
+        height: 17vw;
+        width: 18%;
+        --side-margin: 18rem;
+
+        @media only screen and (min-width: $bp-big-phone) {
+            @include marginItemsSides("3n - 2" , 3n, var(--side-margin));
+        }
+
+        @media only screen and (max-width: $bp-medium-desktop) {
+            --side-margin: 17rem;
+        }
+
+        @media only screen and (max-width: $bp-small-desktop) {
+            --side-margin: 7rem;
+            height: 19vw;
+            width: 21%;
+        }
+
+        @media only screen and (max-width: $bp-large-tablet) {
+            --side-margin: 10rem;
+            height: 25vw;
+            width: 21%;
+        }
+
+        @media only screen and (max-width: $bp-tablet) {
+            height: 27vw;
+            width: 21%;
+            --side-margin: 14rem;
+        }
+
+        @media only screen and (max-width: $bp-small-tablet) {
+            --side-margin: 12rem;
+        }
+
+        @media only screen and (max-width: $bp-big-phone) {
+            height: 38vw;
+            width: 29%;
+            --side-margin: 12rem;
+            @include marginItemsSides("odd" , "even", var(--side-margin));
+        }
+
+        @media only screen and (max-width: $bp-phone) {
+            height: 35vw;
+            width: 27%;
+            --side-margin: 10rem;
+        }
+
+        @media only screen and (max-width: $bp-small-phone) {
+            --side-margin: 8rem;
+        }
+    }
+
+    &--medium {
+        @extend .lvl;
+        height: 12vw;
+        width: 12%;
+        --side-margin: 26rem;
+
+        @media only screen and (min-width:  $bp-large-tablet) {
+            @include marginItemsSides("4n - 3" , 4n, var(--side-margin));
+        }
+
+        @media only screen and (max-width: $bp-medium-desktop) {
+            --side-margin: 23rem;
+        }
+
+        @media only screen and (max-width: $bp-small-desktop) {
+            height: 16vw;
+            width: 16%;
+            --side-margin: 10rem;
+        }
+
+        @media only screen and (max-width: $bp-large-tablet) {
+            @include marginItemsSides("3n - 2" , 3n, var(--side-margin));
+            height: 20vw;
+            width: 15%;
+            --side-margin: 16rem;
+        }
+
+        @media only screen and (max-width: $bp-small-tablet) {
+            --side-margin: 12rem;
+        }
+
+        @media only screen and (max-width: $bp-big-phone) {
+            
+            height: 25vw;
+            width: 20%;
+            --side-margin: 5.5rem;
+        }
+    }
+
+    &--hard{
+        @extend .lvl;
+        width: 10%;
+        height: 11vw;
+
+        --side-margin: 12%;
+
+        @media only screen and (min-width: $bp-large-tablet) {
+            @include marginItemsSides("6n - 5" , 6n, var(--side-margin));
+        }
+
+        @media only screen and (max-width: $bp-small-desktop) {
+            width: 13%;
+            height: 13vw;
+            --side-margin: 4%;
+        }
+
+        @media only screen and (max-width: $bp-large-tablet) {
+            @include marginItemsSides("3n - 2" , 3n, var(--side-margin));
+            --side-margin: 17%;
+            width: 15%;
+            height: 19vw;
+            margin-top: 1.5rem;
+        }
+    }
+}

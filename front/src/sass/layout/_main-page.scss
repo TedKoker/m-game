@@ -1,0 +1,29 @@
+.main-page {
+    grid-column: start-board 1 / end-board 6;
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
+    margin-left: auto;
+    margin-right: auto;
+    color: var(--primary-color-card);
+    transition: color .2s;
+
+    @media only screen and (max-width: $bp-large-tablet) {
+        grid-column: 1 / -1; 
+    }
+
+    &__par {
+        font-size: var(--font-size-big-medium);
+        margin-top: 4rem;
+
+        &:last-of-type {
+            margin-bottom: 4rem;
+        }
+    }
+
+    &__bottom {
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

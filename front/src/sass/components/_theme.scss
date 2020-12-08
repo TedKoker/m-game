@@ -1,0 +1,18 @@
+.theme {
+
+    &--red {
+        --primary-color-card: #b30000;
+       --primary-color-light-card: #ff8080;
+
+    }
+
+    &--green {
+        --primary-color-card: #008000;
+       --primary-color-light-card: #99ff99;
+    }
+
+    &--blue {
+        --primary-color-card: #000080;
+       --primary-color-light-card: #8080ff;
+    }
+}

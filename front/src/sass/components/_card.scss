@@ -1,0 +1,51 @@
+.card {
+    --primary-color: black;
+    --primary-color-light: grey;
+    display: inline-block;
+    position: relative;
+    perspective: 500px;
+
+    input[type="checkbox"] {
+        display: none;
+    }
+
+    &__back,
+    &__front {
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+        backface-visibility: hidden;
+        border-radius: 1rem;
+        transition: transform 1s;
+        overflow: hidden;
+    }
+
+    &__front {
+        transform: rotateY(-180deg);
+        fill: var(--primary-color-card);
+        background-color: var(--primary-color-light-card);
+    }
+
+    &__back {
+        background: repeating-linear-gradient(45deg, var(--primary-color-card), var(--primary-color-card) 12%,
+                                                var(--primary-color-light-card) 12%, var(--primary-color-light-card)24%);
+    }
+}
+
+.card input[type="checkbox"]:checked + * {
+
+    .card__front {
+        transform: rotateY(0);
+    }
+
+    .card__back {
+        transform: rotateY(180deg);
+        
+    }
+}

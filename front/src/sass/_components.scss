@@ -1,0 +1,11 @@
+@import "./components/card";
+@import "./components/lvl";
+@import "./components/theme";
+@import "./components/countdown";
+@import "./components/runclock";
+@import "./components/button";
+@import "./components/open-field";
+
+.disable-clicks {
+    pointer-events: none;
+}

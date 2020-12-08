@@ -1,0 +1,46 @@
+.win-table {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(white, 0.55);
+    overflow: hidden;
+
+    &__table {
+        /*change it to div that inside it the table*/
+        width: 100%;
+        height: 80%;
+        overflow-y: scroll;
+        background-color: transparent;
+        margin: 1.5rem;
+        font-size: 3.5rem;
+        
+
+        table {
+            width: 99%;
+            border-collapse: collapse;
+            th {
+                border: 1px solid black;
+                padding: 1rem 2rem;
+                border: 2px solid black;
+                background-color: rgba(grey, 0.55);
+            }
+            td {
+                border: 1px solid black;
+                padding: 1rem 2rem;
+                background-color: rgba(grey, 0.2);
+            }
+            thead {
+                text-align: left;
+            }
+        }
+
+    }
+
+    &__button {
+        background-color: transparent;
+        margin-left: 1.5rem;
+    }
+}
